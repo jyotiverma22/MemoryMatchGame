@@ -1,0 +1,145 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper{
+	width:100%;
+}
+
+
+.container{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.colbg{
+	background-image: url("..//images/vbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: center;
+	
+}
+
+.alignh{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.left , .right , .middle,.gameArea{
+	height: 100vh;
+
+}
+
+.heading{
+	height: 9vh;
+}
+
+.middle{
+	background-image: url("..//images/back.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.bgplayarea{
+	height: 20.8vh;
+}
+
+.footer{
+	height: 6vh;
+}
+
+.bgcard{
+	height: 130px;
+	margin:10px;
+	padding: 0;
+	width: 22.51%;
+		background-image: url("..//images/bgcard.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.setpadding2{
+	padding-top: 20px;
+}
+
+.divinner1{
+	width: 100%;
+		height: 100%;
+
+	display: block;
+}
+
+.divinner{
+		width: 100%;
+		height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+	margin:0;
+	padding: 0;
+	
+}
+
+.right-haeding{
+	color: #fff;
+	font-weight: bold;
+
+}
+
+.right-body-design
+{
+	margin-top: 20px;
+	color: #fff;
+	font-size: 30px;
+
+}
+
+.btnStart{
+	margin-left: 300px;
+}
+
+.setMArgin{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	height: 50%;
+	width: 100%;
+	display: none;
+}
+
+.ThinkimgDesign{
+	position: bottom;
+	display: none;
+	
+	margin-top: 500px;
+}
+
+#PlayArea{
+	display: block;
+	margin: 0;
+	padding:0;
+}
+
+#resultArea{
+	display:none;
+
+	margin-bottom: 10px;
+	color:#fff;
+}
+
+.designResultBody{
+	font-size: 26px;
+	padding:8px;
+
+}
+
+.ResultArea{
+	font-size: 40px;
+	font-weight: bold;
+}

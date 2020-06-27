@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Memory Match Game</title>
+
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="..//bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="..//css/styles.css" rel="stylesheet">
+    <script src="..//js/index.js"></script>   
+    
+</head>
+
+<body onload="loadFunction()">
+  
+	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 colbg left" >
+
+					<img src="..//images/think.gif" class="img-responsive ThinkimgDesign" id="thinkImg">
+				</div>
+
+				<div class="col-md-8 middle setpadding">
+					<div class="row">
+						<div class="col-md-12 gameArea">
+							<div class="row">
+								<div class="col-md-12 container heading text-center">
+									<h2 class="alignh">Memory Match Game</h2>	
+								</div>			
+							</div>
+
+			<div class="row" id="PlayArea">
+
+					<div class="row bgplayarea text-center">
+						
+							<div class="col-md-3  bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div1"></div>
+							</div>
+
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div2"></div>
+							</div>
+
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div3"></div>
+							</div>
+
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div4"></div>
+							</div>
+						</div>
+
+						<div class="row bgplayarea text-center">
+							<div class="col-md-3  bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div5"></div>
+							</div>
+
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							<div class ="divinner" id="div6"></div>
+							</div>
+
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div7"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div8"></div>
+							</div>
+						</div>
+
+
+						<div class="row bgplayarea text-center">
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div9"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+
+							<div class ="divinner" id="div10"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div11"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div12"></div>
+							</div>
+						</div>
+
+						<div class="row bgplayarea text-center">
+							<div class="col-md-3 bgcard" onclick="" id="div">
+						
+							<div class ="divinner" id="div13"></div>
+
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div14"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div15"></div>
+							</div>
+							<div class="col-md-3 bgcard" onclick="" id="div">
+							
+							<div class ="divinner" id="div16"></div>
+							</div>
+						</div>
+			</div>
+
+			<div class="row" id="resultArea">
+			<div class="col-md-12 text-center">
+
+			<h2 class="ResultArea" id="resultHead">Hello</h2>
+
+			<p class="designResultBody">Total Moves:</p>
+			<p class="designResultBody" id="ResultMove"></p>
+
+			<p class="designResultBody">Your Score</p>
+			<p class="designResultBody" id="ResultScore"></p>
+
+			<p class="designResultBody">Matched Pairs</p>
+			<p class="designResultBody" id="ResultMatch"></p>			
+
+			<p class="designResultBody">Time Taken</p>
+			<p class="designResultBody" ><span id="ResultTime"> </span><span>    sec.</span></p>
+
+			<button class="btn btn-primary" onclick="startGamePanel()" type="button" id="AgainBtn"> Start Again</button>
+
+			</div>
+
+			</div>
+
+						<div class="row">
+								<div class="col-md-12 container footer">
+										<div class="row">
+												<div class="col-md-4 text-center">
+														<button class="btn btn-primary btnStart" onclick="startShuffle()" type="button" id="startBtn"> Start</button>
+												</div>
+												<div class="col-md-4 text-center">
+														<button class="btn btn-primary" onclick="startShuffle()" type="button" id="restartBtn"> Reset</button>
+												</div>
+												<div class="col-md-4 text-center">
+														<button class="btn btn-primary" onclick="endGame()" type="button" id="endBtn"> End Game</button>
+												</div>
+										</div>				
+								</div>
+						</div>
+				
+					</div>
+					</div>
+			</div>
+
+			<div class="col-md-2 right colbg">
+					<h2 class="text-center right-haeding" >SCORE BOARD
+					</h2>
+					<p class="right-body-design text-center">Time Left</p>
+					<p class="right-body-design text-center" >00:00:<span id="timeLeft"></span></p>
+					<p class="right-body-design text-center">Moves</p>
+					<p class="right-body-design text-center" id="moveCount"></p>
+					<p class="right-body-design text-center">Score</p>
+					<p class="right-body-design text-center" id="scoreCount"></p>
+					<p class="right-body-design text-center">Matched Pair</p>
+					<p class="right-body-design text-center" id="matchedFound"></p>
+					<img src="..//images/fire.gif" id="fireImg" class="img-responsive text-center setMArgin" >
+				  </div>
+
+	 </div>
+	 </div>
+
+
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="..//bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
